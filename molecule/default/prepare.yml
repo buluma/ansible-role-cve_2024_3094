@@ -5,5 +5,5 @@
   gather_facts: false
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.openssh
+    - role: buluma.bootstrap
+    - role: buluma.openssh

@@ -1,4 +1,4 @@
 ---
 roles:
-  - name: robertdebock.bootstrap
-  - name: robertdebock.openssh
+  - name: buluma.bootstrap
+  - name: buluma.openssh
