@@ -39,7 +39,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: ansible-lint
-        uses: ansible-community/ansible-lint-action@v24.2.2
+        uses: ansible-community/ansible-lint-action@main
   test:
     runs-on: ubuntu-22.04
     strategy:
