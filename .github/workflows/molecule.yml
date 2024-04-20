@@ -53,8 +53,6 @@ jobs:
           - image: "amazonlinux"
             tag: "latest"
           - image: "docker-molecule-images"
-            tag: "buster"
-          - image: "docker-molecule-images"
             tag: "bullseye"
           - image: "enterpriselinux"
             tag: "8"
@@ -78,8 +76,6 @@ jobs:
             tag: "bionic"
           - image: "docker-molecule-images"
             tag: "jammy"
-          - image: "docker-molecule-images"
-            tag: "lunar"
     steps:
       - name: Checkout Role
         uses: actions/checkout@v4
