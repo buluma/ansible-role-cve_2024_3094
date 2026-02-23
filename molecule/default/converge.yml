@@ -1,9 +1,9 @@
 ---
-- name: Converge
-  hosts: all
-  become: true
-  gather_facts: true
+  - name: Converge
+    hosts: all
+    become: true
+    gather_facts: true
 
-  roles:
-    - role: buluma.cve_2024_3094
-      cve_2024_3094_cleanup: false
+    roles:
+      - role: buluma.cve_2024_3094
+        cve_2024_3094_cleanup: false
