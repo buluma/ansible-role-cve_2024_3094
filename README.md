@@ -51,10 +51,10 @@ cve_2024_3094_cleanup: true
 
 # Where to look for `sshd`, a list of paths.
 cve_2024_3094_sshd_paths:
-- /usr/bin
-- /usr/sbin
-- /usr/local/bin
-- /usr/local/sbin
+  - /usr/bin
+  - /usr/sbin
+  - /usr/local/bin
+  - /usr/local/sbin
 ```
 
 ## [Requirements](#requirements)
