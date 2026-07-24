@@ -13,7 +13,7 @@
   register: xz_version
   changed_when: false
   failed_when:
-    - xz_version.stdout | ansible.builtin.regex_search("5\.6\.(0|1)")
+    - (xz_version.stdout | ansible.builtin.regex_search("5\.6\.(0|1)")) is not none
 
 - name: Find sshd path
   ansible.builtin.find:
@@ -41,4 +41,4 @@
       register: hexdump_output
       changed_when: false
       failed_when:
-        - hexdump_output.stdout | ansible.builtin.regex_search("f30f1efa554889f54c89ce5389fb81e7000000804883ec28488954241848894c2410")
+        - (hexdump_output.stdout | ansible.builtin.regex_search("f30f1efa554889f54c89ce5389fb81e7000000804883ec28488954241848894c2410")) is not none
